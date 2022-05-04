@@ -1,0 +1,399 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body,
+span {
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif;
+}
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*header*/
+
+.banner{
+  /* z-index: 0; */
+  background-color: rgb(0, 0, 0, 0.8);
+  background-image: linear-gradient(to right, #4c8dd9, #8bf193);
+}
+.banner img {
+  background-color: rgb(0, 0, 0, 0.8);
+  /* opacity: 0.3; */
+  max-width: 100%;
+  max-height: 60%;
+}
+/* .header {
+  position: relative;
+} */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  z-index: 1;
+}
+.hydro {
+  position: absolute;
+  top: 48px;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.heading h1 {
+  font-size: 24px;
+  color: white;
+  font-weight: 600;
+}
+.left {
+  margin-left: 114px;
+}
+.left a {
+  text-decoration: none;
+  color: white;
+  margin-left: 14px;
+}
+
+.signin {
+  background-color: red;
+  border-radius: 22px;
+  height: 40px;
+  width: 120px;
+  margin-left: 18px;
+
+  border: 1px solid black;
+}
+.signin a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+}
+.video{
+  position: absolute;
+  top: 328px;
+}
+.youtube {
+  width: 44%;
+  height: 36vh;
+}
+.youtube iframe {
+  width: 100%;
+  height: 100%;
+}
+.startproject {
+  border-radius: 22px;
+  height: 40px;
+  width: 150px;
+  background-color: transparent;
+  border: solid 2px white;
+  margin-top: 18px;
+}
+.startproject a {
+  color: white;
+  padding: 14px;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+}
+.address {
+  margin-top: 18px;
+}
+.address p {
+  color: white;
+}
+.new {
+  margin-top: 70px;
+}
+.intro {
+  width: 38%;
+}
+.intro dt {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.intro dd {
+  font-size: 14px;
+  font-weight: 200px;
+  color: rgb(43, 35, 35);
+}
+.intro .dots{
+  text-align: left;
+}
+.dots {
+  font-size: 10px;
+  text-align: center;
+  margin-bottom: 18px;
+}
+.dots a {
+  color: darkgray;
+}
+
+.intro img {
+  width: 100%;
+}
+.bars {
+  width: 20%;
+  margin-left: 12px;
+  margin-top: 34px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.bars p {
+  color: black;
+  font-size: 14px;
+}
+.bars .bar1 {
+  width: 200px;
+  height: 10px;
+  border-radius: 8px;
+  margin-bottom: 14px;
+  background: linear-gradient(
+    to right,
+    rgb(0, 0, 0) 0%,
+    rgb(0, 0, 0) 90%,
+    rgb(187, 176, 176) 90%,
+    rgb(187, 176, 176) 80% 100%
+  );
+}
+.bars .bar2 {
+  width: 200px;
+  height: 10px;
+  border-radius: 8px;
+  margin-bottom: 14px;
+  background: linear-gradient(
+    to right,
+    rgb(0, 0, 0) 0%,
+    rgb(0, 0, 0) 80%,
+    rgb(187, 176, 176) 80%,
+    rgb(187, 176, 176) 80% 100%
+  );
+}
+.bars .bar3 {
+  width: 200px;
+  height: 10px;
+  border-radius: 8px;
+  margin-bottom: 14px;
+  background: linear-gradient(
+    to right,
+    rgb(0, 0, 0) 0%,
+    rgb(0, 0, 0) 60%,
+    rgb(187, 176, 176) 60%,
+    rgb(187, 176, 176) 80% 100%
+  );
+}
+.bars .bar4 {
+  width: 200px;
+  height: 10px;
+  border-radius: 8px;
+  margin-bottom: 14px;
+  background: linear-gradient(
+    to right,
+    rgb(0, 0, 0) 0%,
+    rgb(0, 0, 0) 80%,
+    rgb(187, 176, 176) 80%,
+    rgb(187, 176, 176) 80% 100%
+  );
+}
+
+.our-blog {
+  background-color: #efefef;
+  padding-top: 30px;
+}
+.blog h3 {
+  font-size: 30px;
+  text-align: center;
+}
+.our-blog .blog {
+  text-align: center;
+}
+.img1 img {
+  width: 100%;
+  margin-top: 8px;
+}
+.readmore {
+  background-color: rgb(219, 219, 219);
+}
+.readmore a {
+  color: black;
+}
+.workspace {
+  width: 48%;
+  height: 317px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  box-shadow: 4.8px 4.6px 4.6px hsl(0deg 0% 0% / 0.35);
+}
+.ourblogs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 42px;
+}
+.workdate {
+  margin-left: 14px;
+}
+.workdate .date {
+  color: red;
+}
+.workdate .headline {
+  font-size: 20px;
+  padding: 12px 0;
+}
+
+.workdate .headpara {
+  font-size: 12px;
+}
+.ourwork{
+  padding-top: 20px;
+}
+/* .work{
+  width: 22%;
+} */
+.workimage1{
+  width: 100%;
+  flex: 0 1 22%;
+}
+.work-img{
+  width: 100%;
+  padding-bottom: 30px;
+}
+.contactus{
+    background-color: rgb(0, 0, 0, 0.8);
+    background-image: linear-gradient(to right, #4c8dd9, #8bf193);
+}
+.contact-heading{
+  color: white;
+  padding-top: 30px;
+}
+.contact{
+  flex: 0 1 45%;
+}
+.name{
+  flex: 0 1 45%;
+}
+.name p{
+  background-color: white;
+  padding: 20px;
+  padding-right: 40px;
+}
